@@ -1,0 +1,8 @@
+﻿output: CircleMain.o Circle.o
+  g++ CircleMain.o Circle.o -o output
+CircleMain.o: CircleMain.cpp
+g++ -c CircleMain.cpp
+Circle.o: Circle.cpp
+g++ -c Circle.cpp
+clean:
+rm *.o output
